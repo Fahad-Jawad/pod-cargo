@@ -13,17 +13,13 @@
     />
     <link
       rel="icon"
-      href="./assets/images/favicon.ico.png"
+      href="./assets/images/favicon.ico.webp"
       type="image/x-icon"
     />
     <link
       rel="shortcut icon"
-      href="./assets/images/favicon.ico.png"
+      href="./assets/images/favicon.ico.webp"
       type="image/x-icon"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link
       rel="stylesheet"
@@ -31,6 +27,7 @@
     />
     <script
       type="text/javascript"
+      defer
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
     ></script>
 
@@ -38,7 +35,7 @@
     <link rel="stylesheet" href="./assets/font-awesome/all.min.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./assets/js/tailwind-config.js"></script>
-    <script src="./assets/font-awesome/all.min.js"></script>
+    <script src="./assets/font-awesome/all.min.js" defer></script>
   </head>
   <body class="overflow-x-hidden">
     <button
@@ -94,7 +91,7 @@
         <!-- Logo -->
         <div class="logo">
           <img
-            src="./assets/images/logo-transparent.png"
+            src="./assets/images/logo-transparent.webp"
             alt="Pod Cargo Logo"
             class="w-28 lg:w-2/3 xl:w-full"
           />
@@ -102,7 +99,7 @@
 
         <!-- Desktop Navigation Links -->
         <div class="hidden lg:flex nav-links flex gap-12">
-          <div class="nav-link flex gap-10 items-center">
+          <div class="nav-links flex gap-10 items-center">
             <div class="nav-link flex gap-2 items-center">
               <a
                 href="#aboutUs"
@@ -162,7 +159,7 @@
           <!-- Close Button -->
           <div class="logo">
             <img
-              src="./assets/images/logo.png"
+              src="./assets/images/logo.webp"
               alt="POD Cargo Logo"
               class="w-28 lg:w-auto"
             />
@@ -445,7 +442,7 @@
               Local & National Moving
             </h3>
             <p class="text-white">
-              Whether you’re relocating within Guildford or moving across the
+              Whether you’re relocating within within Surrey or moving across the
               country, we provide reliable local and nationwide removal services
               designed around your schedule.
             </p>
@@ -480,49 +477,14 @@
       </div>
     </div>
 
-    <!-- stats section -->
-    <div
-      class="bg-white stats w-2/3 mx-auto mt-32 lg:-mt-28 py-1 px-4 rounded-xl relative z-40"
-    >
-      <div class="charts-container flex justify-between flex-col lg:flex-row">
-        <!-- Chart 1 -->
-        <div class="chart">
-          <div class="circle mx-auto" data-percentage="100">
-            <span class="number">0%</span>
-          </div>
-          <p class="label">Project Completed</p>
-        </div>
-        <!-- Chart 2 -->
-        <div class="chart">
-          <div class="circle mx-auto" data-percentage="95">
-            <span class="number">0%</span>
-          </div>
-          <p class="label">Packages Delivered</p>
-        </div>
-        <!-- Chart 3 -->
-        <div class="chart">
-          <div class="circle mx-auto" data-percentage="97">
-            <span class="number">0%</span>
-          </div>
-          <p class="label">Customer Satisfaction</p>
-        </div>
-        <!-- Chart 4 -->
-        <div class="chart">
-          <div class="circle mx-auto" data-percentage="96">
-            <span class="number">0%</span>
-          </div>
-          <p class="label">Delivered On Time</p>
-        </div>
-      </div>
-    </div>
 
     <!-- why-choose-us -->
     <div
-      class="!py-40 general-padding flex flex-col-reverse lg:flex-row"
+      class="!py-12 general-padding flex flex-col-reverse lg:flex-row"
       id="whyChooseUs"
     >
       <div class="w-full lg:w-1/2">
-        <img src="./assets/images/whyus-img.jpg" alt="" class="w-full h-full" />
+        <img src="./assets/images/whyus-img.webp" alt="" loading='lazy' class="w-full h-full" />
       </div>
       <div class="w-full lg:w-1/2">
         <div
@@ -580,11 +542,6 @@
         <h2 class="text-secondary text-base font-bold">
           READY WHEN YOU NEED US
         </h2>
-        <h3
-          class="text-xl md:text-3xl lg:text-4xl xl:text-5xl text-white font-bold text-center"
-        >
-          Movers 24 Hours A Days A Week
-        </h3>
         <p class="text-sm lg:text-base text-white text-center mt-3 lg:mx-20">
           At Pod Cargo, we’re here whenever you need us. Whether it’s a
           last-minute move or a planned relocation, our team works around the
@@ -592,7 +549,7 @@
         </p>
         <a href="#request" class="w-max">
           <button
-            class="bg-primary text-white text-xs lg:text-base font-semibold p-4 px-6 mt-3 rounded-lg"
+            class="bg-primary text-white text-xs lg:text-sm font-semibold p-3 px-4 mt-3 rounded-lg"
           >
             REQUEST QUOTE
           </button>
@@ -633,8 +590,9 @@
         </div>
         <div class="w-full lg:w-1/5 hidden lg:block">
           <img
-            src="./assets/images/arrow-right.png"
+            src="./assets/images/arrow-right.webp"
             alt=""
+            loading='lazy'
             class="w-4/5 mx-auto"
           />
         </div>
@@ -659,7 +617,7 @@
         </div>
         <div class="w-full lg:w-1/5 hidden lg:block">
           <img
-            src="./assets/images/arrow-right.png"
+            src="./assets/images/arrow-right.webp"
             alt=""
             class="w-4/5 mx-auto"
           />
@@ -696,6 +654,7 @@
         <img
           src="./assets/images/deliveryman.png"
           alt=""
+          loading='lazy'
           class="w-2/3 z-50 -mt-40"
         />
       </div>
@@ -879,8 +838,9 @@
           class="flex flex-col items-center lg:items-start gap-10 w-full lg:w-1/4"
         >
           <img
-            src="./assets/images/logo-transparent.png"
+            src="./assets/images/logo-transparent.webp"
             alt="Pod Cargo logo"
+            loading='lazy'
             class="w-full md:w-1/2"
           />
           <p class="text-sm md:text-base">
@@ -973,98 +933,7 @@
 
   <script src="./assets/js/home-sliders.js" defer></script>
   <script src="./assets/js/email.js" defer></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const charts = document.querySelectorAll('.circle');
 
-      // Function to start the animation
-      const animateChart = (chart) => {
-        const targetPercentage = parseInt(
-          chart.getAttribute('data-percentage'),
-          10
-        );
-        const numberElement = chart.querySelector('.number');
 
-        let currentPercentage = 0;
-        const animationDuration = 1500; // Duration in milliseconds
-        const intervalTime = 15; // Time per interval
-        const increment = targetPercentage / (animationDuration / intervalTime);
 
-        const interval = setInterval(() => {
-          currentPercentage += increment;
-          if (currentPercentage >= targetPercentage) {
-            currentPercentage = targetPercentage;
-            clearInterval(interval);
-          }
-
-          // Update the percentage text
-          numberElement.textContent = `${Math.round(currentPercentage)}%`;
-
-          // Update the conic-gradient angle
-          const angle = (currentPercentage / 100) * 360;
-          chart.style.background = `conic-gradient(var(--primary-color) ${angle}deg, transparent ${angle}deg)`;
-        }, intervalTime);
-      };
-
-      // Set up Intersection Observer
-      const observer = new IntersectionObserver(
-        (entries, observer) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              animateChart(entry.target); // Trigger animation
-              observer.unobserve(entry.target); // Stop observing once animated
-            }
-          });
-        },
-        { threshold: 0.5 } // Trigger when 50% of the element is visible
-      );
-
-      // Observe each chart
-      charts.forEach((chart) => {
-        observer.observe(chart);
-      });
-    });
-  </script>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const stats = document.querySelectorAll('.stat-item');
-
-      // Function to animate count-up
-      const animateCount = (stat) => {
-        const target = +stat.getAttribute('data-target'); // Final number
-        const countElement = stat.querySelector('.count');
-        let current = 0;
-
-        const increment = Math.ceil(target / 100); // Increment per frame
-        const duration = 2000; // Total animation duration
-        const interval = duration / (target / increment); // Interval time
-
-        const counter = setInterval(() => {
-          current += increment;
-          if (current >= target) {
-            current = target;
-            clearInterval(counter);
-          }
-          countElement.textContent = current;
-        }, interval);
-      };
-
-      // Using Intersection Observer to trigger animation
-      const observer = new IntersectionObserver(
-        (entries, observer) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              animateCount(entry.target);
-              observer.unobserve(entry.target); // Stop observing after animation
-            }
-          });
-        },
-        { threshold: 0.5 } // Trigger when 50% of element is visible
-      );
-
-      // Observe each stat item
-      stats.forEach((stat) => observer.observe(stat));
-    });
-  </script>
 </html>

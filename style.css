@@ -6,6 +6,27 @@ html{
   scroll-behavior: smooth;
 }
 
+.nav-link {
+  text-decoration: none; /* Remove default underline */
+  color: inherit; /* Use default text color */
+  position: relative; /* For positioning the underline */
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px; /* Adjust distance from text */
+  width: 0;
+  height: 2px; /* Thickness of the underline */
+  background-color: var(--primary-color);
+  transition: width 0.3s ease; /* Smooth transition */
+}
+
+.nav-link:hover::after {
+  width: 100%; /* Full-width underline on hover */
+}
+
 .clip-triangle {
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 26% 100%);
 }
@@ -15,12 +36,12 @@ html{
 }
 
 .header {
-  background: url('./assets/images/headerbg.jpg');
+  background: url('./assets/images/headerbg.webp');
   background-size: cover;
 }
 .services {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
-    url('./assets/images/servicesbg.jpg');
+    url('./assets/images/servicesbg.webp');
   background-size: cover;
 }
 .navSection {
@@ -158,7 +179,7 @@ html{
 
 .ready-section {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
-    url('./assets/images/ready-24-bg.jpg');
+    url('./assets/images/ready-24-bg.webp');
   background-size: cover;
   background-attachment: fixed;
   background-position: top center;
@@ -170,7 +191,7 @@ html{
 
 .testimonials {
   background: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.02)),
-    url('./assets/images/testimonialbg.jpg');
+    url('./assets/images/testimonialbg.webp');
   background-size: cover;
   background-position: center center;
 }
